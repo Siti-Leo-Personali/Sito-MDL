@@ -393,6 +393,24 @@
             }
         }
     </style>
+<style>
+/* Custom fix: titolo Engineered to Last fuoriusciva dal viewport (white-space:pre + width:auto del wrapper Framer). clamp() scala il font da 28px a 60px in base alla larghezza viewport. */
+.framer-emtr0y,
+.framer-emtr0y h2,
+.framer-emtr0y .framer-text {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+}
+.framer-emtr0y {
+    width: 100% !important;
+}
+.framer-emtr0y h2 {
+    font-size: clamp(28px, 5vw, 60px) !important;
+    line-height: 1.1em !important;
+}
+</style>
 </head>
 <body>
 	<script async="" src="https://events.framer.com/script?v=2" data-fid="cd61b12f2b6f8e124df020381b67eba1e364c8c0088957cbfd8f6cf583e8b929" data-no-nt=""></script>
